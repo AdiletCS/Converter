@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <form  action="/" method="post">
+        <div class="subcontainer" id="sub1">
+          <p>Его система счисления </p>
+          Бинарный<input type="radio" name="convert_from" value="binary"><br>
+          Десятичный<input type="radio" name="convert_from" value="decimal"><br>
+          Шестнадцатеричный<input type="radio" name="convert_from" value="hex"><br>
+        </div>
+        <div class="subcontainer" id="sub2">
+          <p>  Перевести в</p>
+          <input type="radio" name="convert_to" value="binary">Бинарный<br>
+          <input type="radio" name="convert_to" value="decimal">Десятичный<br>
+          <input type="radio" name="convert_to" value="hex">Шестнадцатеричный<br>
+        </div>
+        <br>
+        <input type="text" name="number" autocomplete="off">
+        <input type= "submit" name="button" value="Перевести">
+      </form>
+    </div>
+  </body>
+</html>

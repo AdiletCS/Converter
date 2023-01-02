@@ -1,0 +1,34 @@
+html, body {
+  height: 100%;
+}
+body {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
+
+  font-size: 20px;
+}
+.container {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+}
+.subcontainer {
+  display: inline-block;
+}
+#sub1{
+  text-align: right;
+}
+#sub2{
+  text-align: left;
+}
+#output{
+  color: red;
+  font-weight:bold;
+}
+p{
+  margin-left: 8px;
+}
